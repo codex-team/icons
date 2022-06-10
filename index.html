@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Icons</title>
+  <script src="dist/icons.js"></script>
+  <style>
+    #container {}
+
+    .icon {
+      border-radius: 4px;
+      margin: 20px 0;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+    }
+
+    .icon__svg {
+      width: 24px;
+      height: 24px;
+    }
+
+    .icon__svg svg {
+      width: 100%;
+      height: 100%;
+      display: block;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+
+    .icon__name {
+      margin-left: 10px;
+      font-size: 16px;
+      color: #333;
+      font-family: 'Roboto Mono', monospace;
+    }
+  </style>
+</head>
+<body>
+  <h1>Icons</h1>
+
+  <div id="container"></div>
+
+  <script>
+    const container = document.getElementById('container');
+
+    Object.keys(icons).forEach(iconName => {
+      const iconSvg = icons[iconName];
+
+      const iconElement = document.createElement('div');
+      const iconSvgElement = document.createElement('div');
+      const iconNameElement = document.createElement('span');
+
+      iconElement.classList.add('icon');
+      iconSvgElement.classList.add('icon__svg');
+      iconNameElement.classList.add('icon__name');
+
+      iconNameElement.innerText = iconName;
+      iconSvgElement.innerHTML = iconSvg;
+
+      iconElement.appendChild(iconSvgElement);
+      iconElement.appendChild(iconNameElement);
+
+      container.appendChild(iconElement);
+    })
+  </script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "name": "icon-pack",
+  "version": "0.0.0",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "scripts": {
+    "generate": "node ./bin/generate.js"
+  }
+}
