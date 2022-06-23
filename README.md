@@ -28,12 +28,4 @@ You will get the line: `<svg xmlns="http://www.w3.org/2000/svg" ...`
 
 <!-- DO NOT EDIT THE FOLLOWING SECTION MANUALLY -->
 <!-- BEGIN TABLE_OF_ICONS -->
-| Icon | Name |
-| --- | --- |
-| ![H1](./dist/icons/IconH1.svg) | `IconH1` |
-| ![H2](./dist/icons/IconH2.svg) | `IconH2` |
-| ![H3](./dist/icons/IconH3.svg) | `IconH3` |
-| ![H4](./dist/icons/IconH4.svg) | `IconH4` |
-| ![H5](./dist/icons/IconH5.svg) | `IconH5` |
-| ![H6](./dist/icons/IconH6.svg) | `IconH6` |
 <!-- END TABLE_OF_ICONS -->
