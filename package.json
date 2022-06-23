@@ -1,9 +1,14 @@
 {
-  "name": "icon-pack",
+  "name": "@codexteam/icons",
   "version": "0.0.0",
-  "main": "dist/index.js",
+  "main": "dist/icons.js",
   "license": "MIT",
   "scripts": {
-    "generate": "node ./bin/generate.js"
+    "build": "rimraf dist; yarn generate",
+    "generate": "node bin/generate.js"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2",
+    "svgo": "^2.8.0"
   }
 }
