@@ -2,22 +2,22 @@
 
 Dozens of cute icons made with love by CodeX for your projects.
 
-Free to use and share.
+No dependencies required. Free to use and share.
 
 ## Usage
 
 Install the package with node package manager.  
 
 ```sh
-npm install codex-icons
+npm install @codexteam/icons
 
-yarn add codex-icons
+yarn add @codexteam/icons
 ```
 
 And import required icons.
 
 ```js
-import { IconH1 } from 'codex-icons';
+import { IconH1 } from '@codexteam/icons';
 
 console.log(IconH1);
 ```
