@@ -6,6 +6,9 @@ const fs = require('fs');
  * Module for generating icon pack file from svg icons
  */
 class IconsGenerator {
+  /**
+   * Define necessary variables and constants
+   */
   constructor() {
     /**
      * Path to package's root
@@ -41,6 +44,9 @@ class IconsGenerator {
     this.INPUT_ICONS_DIR = path.join(this.ROOT_DIR, 'src', 'icons');
   }
 
+  /**
+   * Main list of actions
+   */
   run() {
     this.recreateOutputDirectory();
     this.createOutputScript();
