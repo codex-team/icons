@@ -7,6 +7,10 @@
     "build": "yarn generate",
     "generate": "node bin/generate.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codex-team/icon-pack.git"
+  },
   "devDependencies": {
     "svgo": "^2.8.0"
   }

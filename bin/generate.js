@@ -7,13 +7,23 @@ const fs = require('fs');
  */
 class IconsGenerator {
   constructor() {
-
+    /**
+     * Path to package's root
+     */
     this.ROOT_DIR = path.resolve(__dirname, '..');
 
-    this.DIST_DIR = path.join(this.ROOT_DIR, 'dist');
-    this.DIST_ICONS_DIR = path.join(this.DIST_DIR, 'icons');
-    this.ICONS_BUNDLE_FILE = path.join(this.DIST_DIR, 'main.js');
+    /**
+     * Input files and dirs
+     */
     this.README_FILE = path.join(this.ROOT_DIR, 'README.md');
+    this.INPUT_ICONS_DIR = path.join(this.ROOT_DIR, 'src', 'icons');
+
+    /**
+     * Output files and dirs
+     */
+    this.OUTPUT_DIR = path.join(this.ROOT_DIR, 'dist');
+    this.OUTPUT_ICONS_DIR = path.join(this.OUTPUT_DIR, 'icons');
+    this.OUTPUT_BUNDLE_FILE = path.join(this.OUTPUT_DIR, 'main.js');
 
     /**
      * Preparing lines for the table of icons which will be inserted to README file
@@ -28,7 +38,7 @@ class IconsGenerator {
      */
     this.files = [];
 
-    this.pathToIcons = path.join(this.ROOT_DIR, 'src', 'icons');
+    this.INPUT_ICONS_DIR = path.join(this.ROOT_DIR, 'src', 'icons');
   }
 
   run() {
@@ -39,6 +49,8 @@ class IconsGenerator {
     this.processSvgFiles();
 
     this.updateReadme();
+
+    this.showReport();
   }
 
   /**
@@ -47,15 +59,15 @@ class IconsGenerator {
   recreateOutputDirectory() {
     console.log('🗄 Recreating output directory');
 
-    fs.rmSync(this.DIST_DIR, { recursive: true, force: true });
-    fs.mkdirSync(this.DIST_ICONS_DIR, { recursive: true });
+    fs.rmSync(this.OUTPUT_DIR, { recursive: true, force: true });
+    fs.mkdirSync(this.OUTPUT_ICONS_DIR, { recursive: true });
   }
 
   /**
    * Create an output script
    */
   createOutputScript() {
-    fs.writeFileSync(this.ICONS_BUNDLE_FILE, '');
+    fs.writeFileSync(this.OUTPUT_BUNDLE_FILE, '');
   }
 
   /**
@@ -64,7 +76,7 @@ class IconsGenerator {
   getSvgFiles() {
     console.log('🔎 Getting SVG files');
 
-    this.files = fs.readdirSync(this.pathToIcons)
+    this.files = fs.readdirSync(this.INPUT_ICONS_DIR)
       .filter(file => file.endsWith('.svg'));
   }
 
@@ -90,7 +102,7 @@ class IconsGenerator {
       /**
        * Read icon's code
        */
-      const iconCode = fs.readFileSync(path.join(this.pathToIcons, filename), 'utf8');
+      const iconCode = fs.readFileSync(path.join(this.INPUT_ICONS_DIR, filename), 'utf8');
 
       /**
        * Optimize icon
@@ -184,7 +196,7 @@ class IconsGenerator {
    * @param {string} svg - optimized svg code
    */
   appendIconToBundle({name, svg}) {
-    fs.appendFileSync(this.ICONS_BUNDLE_FILE, `export const ${name} = '${svg}';\n`);
+    fs.appendFileSync(this.OUTPUT_BUNDLE_FILE, `export const ${name} = '${svg}';\n`);
   }
 
   /**
@@ -194,7 +206,7 @@ class IconsGenerator {
    * @param {string} svg - optimized svg code
    */
   saveOptimizedSvg({ name , svg}) {
-    fs.writeFileSync(path.join(this.DIST_ICONS_DIR, `${name}.svg`), svg);
+    fs.writeFileSync(path.join(this.OUTPUT_ICONS_DIR, `${name}.svg`), svg);
   }
 
   /**
@@ -203,7 +215,7 @@ class IconsGenerator {
    * @param {string} name - name of the icon
    */
   pushIconToTable({ name }) {
-    const pathToIcon = path.relative(path.dirname(this.README_FILE), path.join(this.DIST_ICONS_DIR, `${name}.svg`));
+    const pathToIcon = path.relative(path.dirname(this.README_FILE), path.join(this.OUTPUT_ICONS_DIR, `${name}.svg`));
 
     this.TABLE_OF_ICONS.push(`| ![${name}](${pathToIcon}) | \`${name}\` |`);
   }
@@ -235,6 +247,27 @@ class IconsGenerator {
      * Write new README.md file
      */
     fs.writeFileSync(this.README_FILE, readmeLines.join('\n'));
+  }
+
+  /**
+   * Just a check for number of input and output files
+   */
+  showReport() {
+    /**
+     * Count input files
+     */
+    const inputFilesLength = fs.readdirSync(this.INPUT_ICONS_DIR)
+      .filter(file => file.endsWith('.svg'))
+      .length;
+
+    /**
+     * Count output files
+     */
+    const outputFilesLength = fs.readdirSync(this.OUTPUT_ICONS_DIR)
+      .filter(file => file.endsWith('.svg'))
+      .length;
+
+    console.log(`📊 ${outputFilesLength} of ${inputFilesLength} icons were generated`);
   }
 }
 
