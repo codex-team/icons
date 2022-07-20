@@ -1,10 +1,10 @@
 {
-  "name": "@codexteam/icons",
+  "name": "codex-icons",
   "version": "0.0.0",
   "main": "dist/icons.js",
   "license": "MIT",
   "scripts": {
-    "build": "rimraf dist; yarn generate",
+    "build": "yarn generate",
     "generate": "node bin/generate.js"
   },
   "devDependencies": {
