@@ -8,7 +8,12 @@ const fs = require('fs');
 class IconsGenerator {
   constructor() {
 
-    this.ICONS_BUNDLE_FILE = './dist/main.js';
+    this.ROOT_DIR = path.resolve(__dirname, '..');
+
+    this.DIST_DIR = path.join(this.ROOT_DIR, 'dist');
+    this.DIST_ICONS_DIR = path.join(this.DIST_DIR, 'icons');
+    this.ICONS_BUNDLE_FILE = path.join(this.DIST_DIR, 'main.js');
+    this.README_FILE = path.join(this.ROOT_DIR, 'README.md');
 
     /**
      * Preparing lines for the table of icons which will be inserted to README file
@@ -23,7 +28,7 @@ class IconsGenerator {
      */
     this.files = [];
 
-    this.pathToIcons = path.join(__dirname, '..', 'src', 'icons');
+    this.pathToIcons = path.join(this.ROOT_DIR, 'src', 'icons');
   }
 
   run() {
@@ -42,8 +47,8 @@ class IconsGenerator {
   recreateOutputDirectory() {
     console.log('🗄 Recreating output directory');
 
-    fs.rmSync('./dist', { recursive: true, force: true });
-    fs.mkdirSync('./dist/icons', { recursive: true });
+    fs.rmSync(this.DIST_DIR, { recursive: true, force: true });
+    fs.mkdirSync(this.DIST_ICONS_DIR, { recursive: true });
   }
 
   /**
@@ -189,7 +194,7 @@ class IconsGenerator {
    * @param {string} svg - optimized svg code
    */
   saveOptimizedSvg({ name , svg}) {
-    fs.writeFileSync(`./dist/icons/${name}.svg`, svg);
+    fs.writeFileSync(path.join(this.DIST_ICONS_DIR, `${name}.svg`), svg);
   }
 
   /**
@@ -198,7 +203,9 @@ class IconsGenerator {
    * @param {string} name - name of the icon
    */
   pushIconToTable({ name }) {
-    this.TABLE_OF_ICONS.push(`| ![${name}](./dist/icons/${name}.svg) | \`${name}\` |`);
+    const pathToIcon = path.relative(path.dirname(this.README_FILE), path.join(this.DIST_ICONS_DIR, `${name}.svg`));
+
+    this.TABLE_OF_ICONS.push(`| ![${name}](${pathToIcon}) | \`${name}\` |`);
   }
 
   /**
@@ -227,7 +234,7 @@ class IconsGenerator {
     /**
      * Write new README.md file
      */
-    fs.writeFileSync('./README.md', readmeLines.join('\n'));
+    fs.writeFileSync(this.README_FILE, readmeLines.join('\n'));
   }
 }
 
