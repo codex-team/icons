@@ -30,18 +30,18 @@ You will get the line: `<svg xmlns="http://www.w3.org/2000/svg" ...`
 <!-- BEGIN TABLE_OF_ICONS -->
 | Icon | Name |
 | --- | --- |
-| ![IconArrowDown](./dist/icons/IconArrowDown.svg) | `IconArrowDown` |
-| ![IconArrowLeft](./dist/icons/IconArrowLeft.svg) | `IconArrowLeft` |
-| ![IconArrowRight](./dist/icons/IconArrowRight.svg) | `IconArrowRight` |
-| ![IconArrowUp](./dist/icons/IconArrowUp.svg) | `IconArrowUp` |
-| ![IconBold](./dist/icons/IconBold.svg) | `IconBold` |
-| ![IconChecklist](./dist/icons/IconChecklist.svg) | `IconChecklist` |
 | ![IconH1](./dist/icons/IconH1.svg) | `IconH1` |
 | ![IconH2](./dist/icons/IconH2.svg) | `IconH2` |
 | ![IconH3](./dist/icons/IconH3.svg) | `IconH3` |
 | ![IconH4](./dist/icons/IconH4.svg) | `IconH4` |
 | ![IconH5](./dist/icons/IconH5.svg) | `IconH5` |
 | ![IconH6](./dist/icons/IconH6.svg) | `IconH6` |
+| ![IconArrowDown](./dist/icons/IconArrowDown.svg) | `IconArrowDown` |
+| ![IconArrowLeft](./dist/icons/IconArrowLeft.svg) | `IconArrowLeft` |
+| ![IconArrowRight](./dist/icons/IconArrowRight.svg) | `IconArrowRight` |
+| ![IconArrowUp](./dist/icons/IconArrowUp.svg) | `IconArrowUp` |
+| ![IconBold](./dist/icons/IconBold.svg) | `IconBold` |
+| ![IconChecklist](./dist/icons/IconChecklist.svg) | `IconChecklist` |
 | ![IconInlineCode](./dist/icons/IconInlineCode.svg) | `IconInlineCode` |
 | ![IconItalic](./dist/icons/IconItalic.svg) | `IconItalic` |
 | ![IconLink](./dist/icons/IconLink.svg) | `IconLink` |
