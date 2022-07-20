@@ -1,7 +1,7 @@
 {
   "name": "@codexteam/icons",
   "version": "0.0.0",
-  "main": "dist/icons.js",
+  "main": "dist/main.js",
   "license": "MIT",
   "scripts": {
     "build": "yarn generate",
