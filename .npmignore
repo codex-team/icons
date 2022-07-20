@@ -1,0 +1,8 @@
+.github/
+.idea/
+bin/
+dist/icons/
+src/
+.gitignore
+yarn.lock
+
