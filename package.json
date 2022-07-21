@@ -1,0 +1,17 @@
+{
+  "name": "@codexteam/icons",
+  "version": "0.0.0",
+  "main": "dist/main.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "yarn generate",
+    "generate": "node bin/generate.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codex-team/icon-pack.git"
+  },
+  "devDependencies": {
+    "svgo": "^2.8.0"
+  }
+}
