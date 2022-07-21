@@ -2,9 +2,9 @@
 node_modules/
 .DS_Store
 
-# Ignore rules for non Zero-install usage of Yarn3
-.pnp.*
+# Ignore rules for Yarn3
 .yarn/*
+!.yarn/cache
 !.yarn/patches
 !.yarn/plugins
 !.yarn/releases
