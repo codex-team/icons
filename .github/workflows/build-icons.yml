@@ -13,8 +13,8 @@ jobs:
         with:
           node-version: 16
 
-      - name: Install Node.js packages and run 'build' command
-        run: yarn && yarn build
+      - name: Run 'build' command
+        run: yarn build
 
       - uses: EndBug/add-and-commit@v7
         with:
