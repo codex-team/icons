@@ -55,6 +55,5 @@ You will get the line: `<svg xmlns="http://www.w3.org/2000/svg" ...`
 | ![IconPlus](dist/icons/IconPlus.svg) | `IconPlus` |
 | ![IconSearch](dist/icons/IconSearch.svg) | `IconSearch` |
 | ![IconStar](dist/icons/IconStar.svg) | `IconStar` |
-| ![IconTable](dist/icons/IconTable.svg) | `IconTable` |
 | ![IconText](dist/icons/IconText.svg) | `IconText` |
 <!-- END TABLE_OF_ICONS -->
