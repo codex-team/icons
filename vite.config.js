@@ -6,6 +6,7 @@ export default defineConfig({
         lib: {
             entry: path.resolve(__dirname, 'src/main.js'),
             name: '@codexteam/icons',
+            fileName: 'index'
         },
         emptyOutDir: false,
     },

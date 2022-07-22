@@ -1,7 +1,8 @@
 {
   "name": "@codexteam/icons",
   "version": "0.0.0",
-  "main": "dist/icons.umd.js",
+  "main": "dist/index.umd.js",
+  "module": "dist/index.mjs",
   "license": "MIT",
   "scripts": {
     "build": "yarn generate && vite build",
