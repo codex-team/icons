@@ -24,9 +24,10 @@ class IconsGenerator {
     /**
      * Output files and dirs
      */
-    this.OUTPUT_DIR = path.join(this.ROOT_DIR, 'dist');
-    this.OUTPUT_ICONS_DIR = path.join(this.OUTPUT_DIR, 'icons');
-    this.OUTPUT_BUNDLE_FILE = path.join(this.OUTPUT_DIR, 'main.js');
+    this.OUTPUT_DIST_DIR = path.join(this.ROOT_DIR, 'dist');
+    this.OUTPUT_SRC_DIR = path.join(this.ROOT_DIR, 'src');
+    this.OUTPUT_ICONS_DIR = path.join(this.OUTPUT_DIST_DIR, 'icons');
+    this.OUTPUT_BUNDLE_FILE = path.join(this.OUTPUT_SRC_DIR, 'main.js');
 
     /**
      * Preparing lines for the table of icons which will be inserted to README file
@@ -65,7 +66,7 @@ class IconsGenerator {
   recreateOutputDirectory() {
     console.log('🗄 Recreating output directory');
 
-    fs.rmSync(this.OUTPUT_DIR, { recursive: true, force: true });
+    fs.rmSync(this.OUTPUT_DIST_DIR, { recursive: true, force: true });
     fs.mkdirSync(this.OUTPUT_ICONS_DIR, { recursive: true });
   }
 
