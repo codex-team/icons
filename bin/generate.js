@@ -184,11 +184,9 @@ class IconsGenerator {
       plugins: [
         'sortAttrs',
         {
-          name: 'addAttributesToSVGElement',
+          name: 'convertColors',
           params: {
-            attributes: [
-              {'fill': 'currentColor'}
-            ]
+            currentColor: true
           }
         }
       ]
