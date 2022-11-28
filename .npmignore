@@ -5,4 +5,4 @@ dist/icons/
 src/
 .gitignore
 yarn.lock
-
+vite.config.js
