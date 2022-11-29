@@ -75,6 +75,7 @@ You will get the line: `<svg xmlns="http://www.w3.org/2000/svg" ...`
 | ![IconListBulleted](dist/icons/IconListBulleted.svg) | `IconListBulleted` |
 | ![IconListNumbered](dist/icons/IconListNumbered.svg) | `IconListNumbered` |
 | ![IconMarker](dist/icons/IconMarker.svg) | `IconMarker` |
+| ![IconMenuSmall](dist/icons/IconMenuSmall.svg) | `IconMenuSmall` |
 | ![IconMenu](dist/icons/IconMenu.svg) | `IconMenu` |
 | ![IconPicture](dist/icons/IconPicture.svg) | `IconPicture` |
 | ![IconPlay](dist/icons/IconPlay.svg) | `IconPlay` |
@@ -83,6 +84,7 @@ You will get the line: `<svg xmlns="http://www.w3.org/2000/svg" ...`
 | ![IconRedo](dist/icons/IconRedo.svg) | `IconRedo` |
 | ![IconRemoveBackground](dist/icons/IconRemoveBackground.svg) | `IconRemoveBackground` |
 | ![IconReplace](dist/icons/IconReplace.svg) | `IconReplace` |
+| ![IconSave](dist/icons/IconSave.svg) | `IconSave` |
 | ![IconSearch](dist/icons/IconSearch.svg) | `IconSearch` |
 | ![IconStar](dist/icons/IconStar.svg) | `IconStar` |
 | ![IconStretch](dist/icons/IconStretch.svg) | `IconStretch` |
@@ -91,6 +93,7 @@ You will get the line: `<svg xmlns="http://www.w3.org/2000/svg" ...`
 | ![IconTable](dist/icons/IconTable.svg) | `IconTable` |
 | ![IconText](dist/icons/IconText.svg) | `IconText` |
 | ![IconTrash](dist/icons/IconTrash.svg) | `IconTrash` |
+| ![IconUnderline](dist/icons/IconUnderline.svg) | `IconUnderline` |
 | ![IconUndo](dist/icons/IconUndo.svg) | `IconUndo` |
 | ![IconUnlink](dist/icons/IconUnlink.svg) | `IconUnlink` |
 | ![IconUser](dist/icons/IconUser.svg) | `IconUser` |
