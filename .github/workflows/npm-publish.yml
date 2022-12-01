@@ -27,7 +27,7 @@ jobs:
         uses: codex-team/action-nodejs-package-info@v1.1    
 
       - name: Add LATEST tag for the published package if this is not a -rc version
-        if: steps.package.outputs.is-release-candidate == false
+        if: steps.package.outputs.is-release-candidate == 'false'
         run: npm dist-tag add ${{ steps.package.outputs.name }}@${{ steps.package.outputs.version }} latest
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }} 
