@@ -30,6 +30,12 @@ You will get the line: `<svg xmlns="http://www.w3.org/2000/svg" ...`
 <!-- BEGIN TABLE_OF_ICONS -->
 | Icon | Name |
 | --- | --- |
+| ![IconH1](dist/icons/IconH1.svg) | `IconH1` |
+| ![IconH2](dist/icons/IconH2.svg) | `IconH2` |
+| ![IconH3](dist/icons/IconH3.svg) | `IconH3` |
+| ![IconH4](dist/icons/IconH4.svg) | `IconH4` |
+| ![IconH5](dist/icons/IconH5.svg) | `IconH5` |
+| ![IconH6](dist/icons/IconH6.svg) | `IconH6` |
 | ![IconAddBackground](dist/icons/IconAddBackground.svg) | `IconAddBackground` |
 | ![IconAddBorder](dist/icons/IconAddBorder.svg) | `IconAddBorder` |
 | ![IconAlignCenter](dist/icons/IconAlignCenter.svg) | `IconAlignCenter` |
@@ -59,12 +65,6 @@ You will get the line: `<svg xmlns="http://www.w3.org/2000/svg" ...`
 | ![IconFile](dist/icons/IconFile.svg) | `IconFile` |
 | ![IconGift](dist/icons/IconGift.svg) | `IconGift` |
 | ![IconGlobe](dist/icons/IconGlobe.svg) | `IconGlobe` |
-| ![IconH1](dist/icons/IconH1.svg) | `IconH1` |
-| ![IconH2](dist/icons/IconH2.svg) | `IconH2` |
-| ![IconH3](dist/icons/IconH3.svg) | `IconH3` |
-| ![IconH4](dist/icons/IconH4.svg) | `IconH4` |
-| ![IconH5](dist/icons/IconH5.svg) | `IconH5` |
-| ![IconH6](dist/icons/IconH6.svg) | `IconH6` |
 | ![IconHeading](dist/icons/IconHeading.svg) | `IconHeading` |
 | ![IconHeart](dist/icons/IconHeart.svg) | `IconHeart` |
 | ![IconHidden](dist/icons/IconHidden.svg) | `IconHidden` |
