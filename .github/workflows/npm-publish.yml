@@ -13,13 +13,25 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with:
-          node-version: 16
+          node-version: 18
           registry-url: https://registry.npmjs.org/
+
       - run: yarn
       - run: yarn build
-      - run: yarn publish --access=public
+      - run: yarn publish --access=public --tag=next
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Get package info
+        id: package
+        uses: codex-team/action-nodejs-package-info@v1.1    
+
+      - name: Add LATEST tag for the published package if this is not a -rc version
+        if: steps.package.outputs.is-release-candidate == 'false'
+        run: npm dist-tag add ${{ steps.package.outputs.name }}@${{ steps.package.outputs.version }} latest
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }} 
+
   notify:
     needs: publish
     runs-on: ubuntu-latest
