@@ -14,13 +14,13 @@ This modules simplifies using of CodeX Icons pack in the Nuxt projects.
 
 1. Get the package
 
-```
+```bash
 yarn add @codexteam/nuxt-icons
 ```
 
 2. Add module to the `nuxt.config.ts`
 
-```
+```js
 export default defineNuxtConfig({
   modules: [
     '@codexteam/nuxt-icons'
