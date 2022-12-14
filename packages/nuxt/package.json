@@ -1,6 +1,6 @@
 {
   "name": "@codexteam/nuxt-icons",
-  "version": "0.0.1",
+  "version": "0.0.1-rc.0",
   "description": "Use CodeX Icons in your Nuxt project",
   "main": "src/index.ts",
   "repository": "https://github.com/codex-team/icons/tree/master/packages/nuxt",
