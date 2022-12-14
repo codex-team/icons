@@ -27,7 +27,7 @@ class IconsGenerator {
     this.OUTPUT_DIST_DIR = path.join(this.ROOT_DIR, 'dist');
     this.OUTPUT_SRC_DIR = path.join(this.ROOT_DIR, 'src');
     this.OUTPUT_ICONS_DIR = path.join(this.OUTPUT_DIST_DIR, 'icons');
-    this.OUTPUT_BUNDLE_FILE = path.join(this.OUTPUT_SRC_DIR, 'main.js');
+    this.OUTPUT_BUNDLE_FILE = path.join(this.OUTPUT_SRC_DIR, 'index.ts');
 
     /**
      * Preparing lines for the table of icons which will be inserted to README file
@@ -201,7 +201,7 @@ class IconsGenerator {
    * @param {string} svg - optimized svg code
    */
   appendIconToBundle({name, svg}) {
-    fs.appendFileSync(this.OUTPUT_BUNDLE_FILE, `export const ${name} = '${svg}';\n`);
+    fs.appendFileSync(this.OUTPUT_BUNDLE_FILE, `export const ${name}: string = '${svg}';\n`);
   }
 
   /**
