@@ -2,7 +2,7 @@
 
 This modules simplifies using of CodeX Icons pack in the Nuxt projects.
 
-[![codex-icons-nuxt](./../../showcase.png "codex-icons showcase")](https://github.com/codex-team/icons/tree/master/packages/nuxt)
+[![codex-icons-nuxt](./../../showcase.png "CodeX Icons showcase")](https://github.com/codex-team/icons/tree/master/packages/nuxt)
 
 ## Features
 

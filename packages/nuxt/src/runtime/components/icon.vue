@@ -6,13 +6,18 @@
 import { ref } from 'vue';
 
 /**
+ * Union type for available icon names
+ */
+type CodexIconName = keyof typeof import('@codexteam/icons');
+
+/**
  * Components properties
  */
 const props = defineProps<{
   /**
    * Icon name, should be one of the names listed on https://github.com/codex-team/icons
    */
-  name: string,
+  name: CodexIconName,
 }>()
 
 /**
@@ -32,6 +37,7 @@ const vInlineSvg = {
 
 try {
   const icons = await import('@codexteam/icons')
+
   const iconSource = icons[props.name];
 
   icon.value = iconSource
