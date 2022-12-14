@@ -1,0 +1,21 @@
+{
+  "name": "@codexteam/nuxt-icons",
+  "version": "0.0.1-rc.1",
+  "description": "Use CodeX Icons in your Nuxt project",
+  "main": "src/index.ts",
+  "repository": "https://github.com/codex-team/icons/tree/master/packages/nuxt",
+  "author": "CodeX",
+  "license": "MIT",
+  "dependencies": {
+    "@codexteam/icons": "^0.0.9-rc.0",
+    "@nuxt/kit": "^3.0.0"
+  },
+  "peerDependencies": {
+    "nuxt": "^3.0.0",
+    "vue": "^3.0.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}
