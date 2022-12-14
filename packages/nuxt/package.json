@@ -7,10 +7,11 @@
   "author": "CodeX",
   "license": "MIT",
   "dependencies": {
+    "@codexteam/icons": "^0.0.9-rc.0",
     "@nuxt/kit": "^3.0.0"
   },
   "peerDependencies": {
     "nuxt": "^3.0.0",
-    "vue": "^3.2.45"
+    "vue": "^3.0.0"
   }
 }

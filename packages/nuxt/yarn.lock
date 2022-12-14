@@ -171,6 +171,10 @@
     "@babel/helper-validator-identifier" "^7.19.1"
     to-fast-properties "^2.0.0"
 
+"@codexteam/icons@^0.0.9-rc.0":
+  version "0.0.9-rc.0"
+  resolved "https://registry.yarnpkg.com/@codexteam/icons/-/icons-0.0.9-rc.0.tgz#dfc9fd9cccdf8c3504dbbb9835bc36ce77d4a5f8"
+
 "@jridgewell/gen-mapping@^0.1.0":
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/@jridgewell/gen-mapping/-/gen-mapping-0.1.1.tgz#e5d2e450306a9491e3bd77e323e38d7aff315996"
