@@ -1,6 +1,6 @@
 {
   "name": "@codexteam/icons",
-  "version": "0.0.9-rc.1",
+  "version": "0.0.9-rc.2",
   "main": "dist/index.umd.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
