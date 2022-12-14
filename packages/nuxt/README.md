@@ -30,7 +30,7 @@ export default defineNuxtConfig({
 
 ## Usage
 
-Use the `codex-icon` component with the `name` property with should be one of the [list](https://github.com/codex-team/icons#list-of-icons).
+Use the `codex-icon` component with the `name` property which should be one of the [list](https://github.com/codex-team/icons#list-of-icons).
 
 ```vue
 <codex-icon name="IconHeart" />
