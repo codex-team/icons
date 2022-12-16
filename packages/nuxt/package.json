@@ -3,6 +3,7 @@
   "version": "0.0.1-rc.1",
   "description": "Use CodeX Icons in your Nuxt project",
   "main": "src/index.ts",
+  "types": "src/types/index.ts",
   "repository": "https://github.com/codex-team/icons/tree/master/packages/nuxt",
   "author": "CodeX",
   "license": "MIT",

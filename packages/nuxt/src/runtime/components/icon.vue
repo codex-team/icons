@@ -4,11 +4,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue';
-
-/**
- * Union type for available icon names
- */
-type CodexIconName = keyof typeof import('@codexteam/icons');
+import { CodexIconName } from '../../types';
 
 /**
  * Components properties
