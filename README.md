@@ -54,6 +54,7 @@ You will get the line: `<svg xmlns="http://www.w3.org/2000/svg" ...`
 | ![IconDirectionLeftDown](dist/icons/IconDirectionLeftDown.svg) | `IconDirectionLeftDown` |
 | ![IconDirectionRightDown](dist/icons/IconDirectionRightDown.svg) | `IconDirectionRightDown` |
 | ![IconDirectionUpRight](dist/icons/IconDirectionUpRight.svg) | `IconDirectionUpRight` |
+| ![IconDotCircle](dist/icons/IconDotCircle.svg) | `IconDotCircle` |
 | ![IconEtcHorisontal](dist/icons/IconEtcHorisontal.svg) | `IconEtcHorisontal` |
 | ![IconEtcVertical](dist/icons/IconEtcVertical.svg) | `IconEtcVertical` |
 | ![IconFile](dist/icons/IconFile.svg) | `IconFile` |
@@ -82,6 +83,7 @@ You will get the line: `<svg xmlns="http://www.w3.org/2000/svg" ...`
 | ![IconPicture](dist/icons/IconPicture.svg) | `IconPicture` |
 | ![IconPlay](dist/icons/IconPlay.svg) | `IconPlay` |
 | ![IconPlus](dist/icons/IconPlus.svg) | `IconPlus` |
+| ![IconQuestion](dist/icons/IconQuestion.svg) | `IconQuestion` |
 | ![IconQuote](dist/icons/IconQuote.svg) | `IconQuote` |
 | ![IconRedo](dist/icons/IconRedo.svg) | `IconRedo` |
 | ![IconRemoveBackground](dist/icons/IconRemoveBackground.svg) | `IconRemoveBackground` |
