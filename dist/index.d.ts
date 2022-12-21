@@ -44,6 +44,7 @@ export declare const IconLink: string;
 export declare const IconLinkedin: string;
 export declare const IconListBulleted: string;
 export declare const IconListNumbered: string;
+export declare const IconLoader: string;
 export declare const IconMarker: string;
 export declare const IconMenuSmall: string;
 export declare const IconMenu: string;
