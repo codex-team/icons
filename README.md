@@ -4,6 +4,9 @@ Dozens of cute icons made with love by CodeX for your projects.
 
 No dependencies required. Free to use and share.
 
+<img width="1657" alt="image" src="https://user-images.githubusercontent.com/3684889/210104174-93ee88d6-a2ba-44a8-ac22-ee04955c771b.png">
+
+
 ## Usage
 
 Install the package with node package manager.  
@@ -107,3 +110,9 @@ You will get the line: `<svg xmlns="http://www.w3.org/2000/svg" ...`
 | ![IconUsersGroup](dist/icons/IconUsersGroup.svg) | `IconUsersGroup` |
 | ![IconWarning](dist/icons/IconWarning.svg) | `IconWarning` |
 <!-- END TABLE_OF_ICONS -->
+
+# How to add an icon
+
+- Request an icon you need via [an Issue]([url](https://github.com/codex-team/icons/issues/new))
+- Or add your icon and open a PR
+
