@@ -111,7 +111,7 @@ You will get the line: `<svg xmlns="http://www.w3.org/2000/svg" ...`
 | ![IconWarning](dist/icons/IconWarning.svg) | `IconWarning` |
 <!-- END TABLE_OF_ICONS -->
 
-# How to add an icon
+## How to add an icon
 
 - Request an icon you need via [an Issue](https://github.com/codex-team/icons/issues/new)
 - Or add your icon and open a PR
