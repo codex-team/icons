@@ -3,18 +3,22 @@
     class="cdx-icon"
     :class="class"
     v-html="icon"
-    ref="iconWrapper"
+    :style="style"
   ></span>
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted } from 'vue';
+import { ref, computed } from 'vue';
 import { CodexIconName } from '../../types';
+/**
+ * Map with all icons
+ */
+import * as icons from '@codexteam/icons';
 
 /**
  * Components properties
  */
-const props = defineProps<{
+const props = withDefaults(defineProps<{
   /**
    * Icon name, should be one of the names listed on https://github.com/codex-team/icons
    */
@@ -29,36 +33,34 @@ const props = defineProps<{
    * Optional size if icon, for example: 20
    */
   size?:  number,
-}>()
+}>(), {
+  size: 24
+})
 
 /**
  * Icon svg code to be inserted
  */
 const icon = ref<string>('')
 
-/**
- * Wrapper element reference
- */
-const iconWrapper = ref<HTMLElement|null>(null);
+let iconList: Record<CodexIconName, string>;
 
 /**
- * Map with all icons
+ * Workaround SSR problem when "import * as icons from '@codexteam/icons'" wraps with { default: ... }
  */
-const icons = await import('@codexteam/icons')
+if ('default' in icons){
+  iconList = (icons as unknown as {default: Record<CodexIconName, string>}).default;
+} else {
+  iconList = icons;
+}
 
-onMounted(() => {
-  try {
-    const iconSource = icons[props.name as CodexIconName];
-
-    icon.value = iconSource;
-
-    if (props.size !== undefined && iconWrapper.value !== null) {
-      iconWrapper.value.style.setProperty('--size', `${props.size}px`);
-    }
-  } catch {
-    console.error(`🛍 CodeX Icons: '${props.name}' doesn't exist in the pack`)
-  }
+/**
+ * Pass size variable to the CSS
+ */
+const style = computed(() => {
+  return `--size: ${props.size}px`;
 })
+
+icon.value = iconList[props.name as CodexIconName];
 </script>
 
 <style>
