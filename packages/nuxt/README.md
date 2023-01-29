@@ -36,6 +36,16 @@ Use the `codex-icon` component with the `name` property which should be one of t
 <codex-icon name="IconHeart" />
 ```
 
+## Properties
+
+There are few properties available for component:
+
+| prop | type | description |
+| -- | -- | -- |
+| `name` | string | Required. Name of icon from CodeX Icons pack |
+| `class` | string | Class name to be added to the icon wrapper |
+| `size` | number | Icon width and height value |
+
 # About CodeX
 
 <img align="right" width="120" height="120" src="https://codex.so/public/app/img/codex-logo.svg" hspace="50">
