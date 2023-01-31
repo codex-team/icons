@@ -89,6 +89,7 @@ You will get the line: `<svg xmlns="http://www.w3.org/2000/svg" ...`
 | ![IconQuestion](dist/icons/IconQuestion.svg) | `IconQuestion` |
 | ![IconQuote](dist/icons/IconQuote.svg) | `IconQuote` |
 | ![IconRedo](dist/icons/IconRedo.svg) | `IconRedo` |
+| ![IconReload](dist/icons/IconReload.svg) | `IconReload` |
 | ![IconRemoveBackground](dist/icons/IconRemoveBackground.svg) | `IconRemoveBackground` |
 | ![IconReplace](dist/icons/IconReplace.svg) | `IconReplace` |
 | ![IconSave](dist/icons/IconSave.svg) | `IconSave` |

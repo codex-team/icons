@@ -54,6 +54,7 @@ export declare const IconPlus: string;
 export declare const IconQuestion: string;
 export declare const IconQuote: string;
 export declare const IconRedo: string;
+export declare const IconReload: string;
 export declare const IconRemoveBackground: string;
 export declare const IconReplace: string;
 export declare const IconSave: string;
