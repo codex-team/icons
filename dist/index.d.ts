@@ -12,6 +12,7 @@ export declare const IconAlignLeft: string;
 export declare const IconAlignRight: string;
 export declare const IconBold: string;
 export declare const IconBrackets: string;
+export declare const IconCheck: string;
 export declare const IconChecklist: string;
 export declare const IconChevronDown: string;
 export declare const IconChevronLeft: string;
