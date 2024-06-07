@@ -53,6 +53,7 @@ You will get the line: `<svg xmlns="http://www.w3.org/2000/svg" ...`
 | ![IconChevronLeft](dist/icons/IconChevronLeft.svg) | `IconChevronLeft` |
 | ![IconChevronRight](dist/icons/IconChevronRight.svg) | `IconChevronRight` |
 | ![IconChevronUp](dist/icons/IconChevronUp.svg) | `IconChevronUp` |
+| ![IconClearFormatting](dist/icons/IconClearFormatting.svg) | `IconClearFormatting` |
 | ![IconClipboard](dist/icons/IconClipboard.svg) | `IconClipboard` |
 | ![IconCollapse](dist/icons/IconCollapse.svg) | `IconCollapse` |
 | ![IconColor](dist/icons/IconColor.svg) | `IconColor` |
