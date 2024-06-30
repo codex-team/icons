@@ -12,6 +12,8 @@ export default defineConfig({
         emptyOutDir: false,
     },
     plugins: [
-        dts(),
+        dts({
+            tsconfigPath: './tsconfig.json',
+          }),
     ]
 });
