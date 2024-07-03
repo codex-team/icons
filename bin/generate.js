@@ -202,7 +202,6 @@ class IconsGenerator {
    */
   appendIconToBundle({name, svg}) {
     fs.appendFileSync(this.OUTPUT_BUNDLE_FILE, `export const ${name}: string = '${svg}';\n`);
-    fs.appendFileSync(this.OUTPUT_BUNDLE_FILE, `export type ${name} = string;\n`);
   }
 
   /**
